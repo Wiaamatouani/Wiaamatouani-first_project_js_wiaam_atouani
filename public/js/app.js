@@ -81,4 +81,6 @@ function signUp() {
     if (conditionemail(email)) {
         alert("email not correct. Please try again.");
         return;
-    };}
+    };
+    let age = prompt("Enter your age:");
+    if (conditionage(age));}
