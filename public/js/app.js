@@ -70,3 +70,10 @@ function conditionpassword(password) {
       return false;
     }
 }
+;
+function signUp() {
+    let names = prompt("Enter your full name:");
+    if (conditionname(names)) {
+        alert("Invalid name. Please try again.");
+        return;
+    };}
