@@ -83,4 +83,11 @@ function signUp() {
         return;
     };
     let age = prompt("Enter your age:");
-    if (conditionage(age));}
+    if (conditionage(age));
+    
+    let password = prompt("Enter your password:");
+    if (conditionepassword(password)) {
+        alert("password not correct 3awed");
+        return;
+    };
+}
