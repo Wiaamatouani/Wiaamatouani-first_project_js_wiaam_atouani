@@ -7,9 +7,9 @@ function myFunction() {
         if (userChoice === "sign up") {
             signUp();
         } else if (userChoice === "log in") {
-
+            logIn() 
         } else if (userChoice === "change password") {
-
+            changePassword()
         } else {
             alert("Invalid choice. Please try again.");
         }
@@ -90,4 +90,21 @@ function signUp() {
         alert("password not correct 3awed");
         return;
     };
+    alert("you are sign Up");
 }
+users.push({names,email,age,password});
+//signUp();
+ function logIn() {
+    let validiemail = prompt("enter your email to logIn");
+    if (users.find((el) => el.email == validiemail)) {
+      let validipass = prompt("enter your password to logIn");
+      if (users.find((el) => el.password == validipass)) {
+        alert("now you log in");
+      } else {
+        alert("password not correct");
+      }
+    } else {
+      alert("the email not correct");
+    }
+  };
+ 
