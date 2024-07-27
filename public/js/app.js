@@ -76,4 +76,9 @@ function signUp() {
     if (conditionname(names)) {
         alert("Invalid name. Please try again.");
         return;
+    };
+    let email = prompt("Enter your email:");
+    if (conditionemail(email)) {
+        alert("email not correct. Please try again.");
+        return;
     };}
