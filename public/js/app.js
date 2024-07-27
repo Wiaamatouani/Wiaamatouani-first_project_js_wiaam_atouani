@@ -47,3 +47,12 @@ function conditionemail(email) {
     if (users.some(user => user.email === email)) ;
     return true;
     };
+    //*condition age
+function conditionage(age) {
+    let nospacesage = age.trim();
+    if (!/^[0-9]+$/.test(nospacesage)) {
+    alert("use only number try again");
+    }
+    if (!/^\d{1,2}$/.test(nospacesage) || nospacesage == 0) {
+    alert("use just two number more than that is not allowed");
+    };};
