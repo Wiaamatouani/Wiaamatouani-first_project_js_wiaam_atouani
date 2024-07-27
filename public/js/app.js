@@ -36,3 +36,14 @@ function conditionname(names) {
         return false;
     };
 };
+//*conditionemail
+function conditionemail(email) {
+    let nospacesemail = email.trim();
+    
+    let lowercaseemail = nospacesemail.slice(0).toLowerCase();
+    let removespace = lowercaseemail.replace(/\s/g, "");
+    if (email.length < 10) ;
+    if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/.test(email)) ;
+    if (users.some(user => user.email === email)) ;
+    return true;
+    };
