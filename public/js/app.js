@@ -56,3 +56,17 @@ function conditionage(age) {
     if (!/^\d{1,2}$/.test(nospacesage) || nospacesage == 0) {
     alert("use just two number more than that is not allowed");
     };};
+    //*condpassword
+function conditionpassword(password) {
+    let nospacepass = password.trim();
+    let removespace = nospacepass.replace(/\s/g, "");
+    const regex = /[!@#\-+*\/]/;
+    if (!regex.test(removespace)) {
+      alert("password most have one or more special char");
+      return false;
+    }
+    if (removespace.length < 7) {
+      alert("password is less than 7");
+      return false;
+    }
+}
