@@ -107,4 +107,16 @@ users.push({names,email,age,password});
       alert("the email not correct");
     }
   };
- 
+ //changePassword();
+const choices = () => {
+    let choise = prompt(
+      " u want : SignUp or LogIn or Change Password or exict to quit"
+    );
+    if (choise == "SignUp") {
+    } else if (choise == "LogIn") {
+    } else if (choise == "ChangePassword") {
+      changePassword();
+    }
+  };
+  choices();
+  console.table(users);
